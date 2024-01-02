@@ -11,7 +11,7 @@ const {
   getThreads,
   deleteThread,
   reportThread
-} = require("../controllers/thread");
+} = require("../controllers/threads");
 
 router
   .route("/threads/:board")

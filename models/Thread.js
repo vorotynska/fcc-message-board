@@ -23,6 +23,7 @@ const ThreadSchema = new mongoose.Schema({
     timestamps: true
 });
 
+
 ThreadSchema.pre("save", async function () {
     const salt = await bcrypt.genSalt(10);
     this.delete_password = await bcrypt.hash(this.delete_password, salt);

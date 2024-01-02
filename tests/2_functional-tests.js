@@ -123,7 +123,7 @@ suite("Functional Tests", function () {
         .end((err, res) => {
           if (err) done(err);
           assert.equal(res.status, 200);
-          assert.equal(res.text, "wrong password");
+          assert.equal(res.text, "incorrect password");
           done();
         });
     });
@@ -156,7 +156,7 @@ suite("Functional Tests", function () {
         .end((err, res) => {
           if (err) done(err);
           assert.equal(res.status, 200);
-          assert.equal(res.text, "success");
+          assert.equal(res.text, "reported");
           done();
         });
     });
