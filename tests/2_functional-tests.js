@@ -4,7 +4,7 @@ const assert = chai.assert;
 const server = require("../server");
 const Thread = require("../models/Thread");
 const Reply = require("../models/Reply");
-const bcrypt = require("bcrypt");
+
 //const thread = require('../controllers/thread');
 //const reply = require('../controllers/replies');
 
